@@ -1,5 +1,7 @@
 body {
-    background-image: url("/assets/bg.jpg") ;
+    /* atentie la navigare, incerci sa incarci un asset din assets in resources fiind. am atasat un screenshot sa iti arat ca imaginile nu se incarca */
+    /* background-image: url("/assets/bg.jpg") ; */
+    background-image: url("../assets/bg.jpg") ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -29,12 +31,14 @@ p {
     font-size: 18px;
     font-weight: 100;
     line-height: 40px;
+    /* sugestie #aaa */
     color: #aaaaaa;
 }
 
 button {
     width: 250px;
     height: 50px;
+    /* aceasta tehnica pe o rezolutie mai mica iti va face probleme, iti sugerez in situatii similare sa te bazezi pe simple tehnici de spatiere. iti atasez un screenshot cu rezultatul pe o rezolutie mai mica. */
     position: fixed;
     bottom: 20%;
     background: transparent;
