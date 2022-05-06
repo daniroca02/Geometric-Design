@@ -1,0 +1,67 @@
+Implementation details:
+- implement the layout using CSS selectors
+- you will be the one who sets the font-family and the spacing (margins, paddings, width, heights etc.)
+- for the BUSINESS PROJECT UI element CSS rotate can be used for implementation (https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate)
+Colors:
+- header text: #283553
+- main gren: #617d81
+- main brown: #ab9683
+- text title: #cccccc
+- footer background color: #000807
+- footer text: #7f8382
+- BUSINESS PROJECT/BUSINESS PLAN text: #ffffff (white) + css opacity rule (https://developer.mozilla.org/en-US/docs/Web/CSS/opacity)
+
+.image-wrapper {
+    width: calc(35% + 145px);
+    height: auto;
+    position: relative;
+    left: calc(65% - 145px);
+    top: -65px;
+    margin: 0;
+    z-index: -1;
+}
+main div img{
+    width: 100%;
+    height: auto;
+}
+/* main h2{
+    margin: 0;
+    width: calc(35% + 145px);
+    padding: 25px 0;
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    opacity: 0.9;
+    background-color: #ab9683;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    left: calc(65% - 145px);
+} */
+.text-block-wrapper{
+    margin: 0;
+    opacity: 0.9;
+}
+
+.text-block-wrapper h2{
+    font-size: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    width: calc(35% + 145px);
+    padding: 25px 0;
+    color: #fff;
+    background-color: #ab9683;
+    position: relative;
+    left: calc(65% - 145px);
+}
+.text-block-wrapper div{
+    position: relative;
+    right: calc((35% + 145px)/2 + 75px);
+    bottom: 20%;
+}
+.text-block-wrapper h2:first-child {
+    background-color: #617d81;
+    /* transform: rotate(90deg); */
+}
