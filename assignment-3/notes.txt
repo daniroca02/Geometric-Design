@@ -1,0 +1,59 @@
+Colors:
+- header: #3a4058
+- sidebar: #03afee (top), #15dee4(bottom)
+- bg grey: #e0e1e3
+- orange: #ee4e04
+- text title: #848484
+- text table: #94a6be
+
+<aside>
+                    <div class="logo-wrapper">
+                        <img src="assets/logo.png" alt="Logo">
+                    </div>
+
+                    <div class="category-wrapper dashboard-wrapper">
+                        <div class="category-title">Dashboard</div>
+                        <nav>
+                            <div class="nav-item-wrapper">
+                                <div class="icon-wrapper"><img src="assets/agents-white.png"></div>
+                                <a href="#">Agents</a>
+                            </div>
+                            <div class="nav-item-wrapper">
+                                <div class="icon-wrapper"><img src="assets/agents-white.png"></div>
+                                <a href="#">Agents</a>
+                            </div>
+                            <div class="nav-item-wrapper">
+                                <div class="icon-wrapper"><img src="assets/agents-white.png"></div>
+                                <a href="#">Agents</a>
+                            </div>
+                            <div class="nav-item-wrapper">
+                                <div class="icon-wrapper"><img src="assets/agents-white.png"></div>
+                                <a href="#">Agents</a>
+                            </div>
+                            <div class="nav-item-wrapper">
+                                <div class="icon-wrapper"><img src="assets/agents-white.png"></div>
+                                <a href="#">Agents</a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="category-wrapper dashboard-wrapper">
+                        <div class="category-title">Customer Data</div>
+                        <nav>
+                            <div class="nav-item-wrapper">
+                                <div class="icon-wrapper"><img src="assets/agents-white.png"></div>
+                                <a href="#">Agents</a>
+                            </div>
+                            <div class="nav-item-wrapper selected">
+                                <div class="icon-wrapper"><img src="assets/agents-white.png"></div>
+                                <a href="#">Agents</a>
+                            </div>
+                            <div class="nav-item-wrapper">
+                                <div class="icon-wrapper"><img src="assets/agents-white.png"></div>
+                                <a href="#">Agents</a>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="category-wrapper customer-data-wrapper"></div>
+                </aside>
