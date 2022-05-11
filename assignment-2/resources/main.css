@@ -61,6 +61,8 @@ nav div:nth-child(2) a:hover {
 
 section {
     display: flex;
+    /* nu trebuie mereu sa fortam height-ul in layout, e ok sa lasam sa fie determinat de continutul din pagina */
+    /* ti-am atasat niste screenshot-uri ca sa intelegi cum vin inghesuite elementele */
     height: calc(100% - 145px);
 }
 
@@ -109,6 +111,7 @@ main {
     width: calc(45% + 145px);
     height: auto;
     position: relative;
+    /* mult mai usor sa te pozitionez de latura de extrema, de exemplu right in cazul asta */
     left: calc(55% - 145px);
     top: -65px;
     margin: 0;
@@ -139,6 +142,7 @@ main div img {
 .text-block-wrapper h2:first-child {
     background-color: #617d81;
     position: relative;
+    /* iti recomand sa mergi de la mare la mic in astfel de situatii, adica sa pozitionezi parintele in cazul tau MAIN, iar apoi in interiorul sau sa pozitionezi doar fata de parinte, altfel nu este robust in momentul in care se modifica si lejer rezolutia */
     bottom: 235px;
     transform: rotate(90deg);
 }
