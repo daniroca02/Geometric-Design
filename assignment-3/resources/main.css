@@ -49,7 +49,6 @@ aside {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     flex: 1;
 }
 
@@ -72,7 +71,6 @@ aside .logo-wrapper img {
 }
 
 .category-wrapper nav {
-    /**/
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -115,11 +113,6 @@ aside .logo-wrapper img {
     width: 25px;
     background-repeat: no-repeat;
     background-size: contain;
-}
-
-.icon-wrapper img {
-    width: 25px;
-    color: inherit;
 }
 
 .dashboard-wrapper .nav-item-wrapper:first-child .icon-wrapper {
@@ -204,11 +197,12 @@ aside .logo-wrapper img {
     box-sizing: border-box;
 }
 
-.main-content-wrapper > div {
+.main-content-wrapper>div {
     display: flex;
     flex-direction: row-reverse;
 }
-.main-content-wrapper > div > button {
+
+.main-content-wrapper>div>button {
     align-self: flex-end;
     display: flex;
     align-items: center;
@@ -220,7 +214,7 @@ aside .logo-wrapper img {
     text-transform: uppercase;
 }
 
-.main-content-wrapper > div > button:hover {
+.main-content-wrapper>div>button:hover {
     background-color: #ff5100;
     cursor: pointer;
 }
@@ -277,9 +271,19 @@ tbody tr:last-child {
 
 thead tr th,
 tbody tr td {
-    padding: 30px 0 20px 20px;
-
+    padding: 30px 0 20px;
 }
+
+thead tr th:first-child,
+tbody tr td:first-child {
+    padding-left: 20px;
+}
+
+thead tr th:last-child,
+tbody tr td:last-child {
+    padding-right: 20px;
+}
+
 
 table tbody tr:first-child td:first-child {
     border-top-left-radius: 5px;
@@ -296,13 +300,3 @@ table tbody tr:last-child td:first-child {
 table tbody tr:last-child td:last-child {
     border-bottom-right-radius: 5px;
 }
-
-/* @media screen and (min-height: 1000px) {
-    aside {
-        width: 200px;
-    }
-
-    .main-content-wrapper {
-        width: calc(100% - 200px);
-    }
-} */
