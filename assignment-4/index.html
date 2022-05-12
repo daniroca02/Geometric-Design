@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="bundles/font-awesome/css/all.css" rel="stylesheet">
+    <link href="resources/main.css" rel="stylesheet">
+    <title>UniC</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo-wrapper"></div>
+            <div class="menu-wrapper">
+                <a id="Login">Login</a>
+                <a>About Us</a>
+                <a>Services</a>
+                <a>Contact Us</a>
+                <a>Community</a>
+            </div>
+        </nav>
+        <h1>Contact us</h1>
+        <h2>Fill out the form below to learn more.</h2>
+    </header>
+    <section>
+        <main>
+            <form>
+                <label for="firstName">First Name</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <input required type="text" name="first_name" id="firstName" placeholder="Enter your first name">
+                </div>
+                <label for="lastName">Last Name</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <input required type="text" name="last_name" id="lastName" placeholder="Enter your last name">
+                </div>
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input required type="email" name="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="line"></div>
+                <label for="message">Message</label>
+                <textarea id="message"></textarea>
+                <label for="">Contact me by:</label>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="check_email" id="checkEmail">
+                    <label for="checkEmail">Email</label>
+                </div>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" name="check_sms" id="checkSMS">
+                    <label for="checkSMS">SMS</label>
+                </div>
+                <div class="submit-wrapper">
+                    <div>
+                        <button type="submit">Submit</button>
+                        <p>or press <span>enter</span></p>
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <h1>Geometric</h1>
+            <h2>Technology</h2>
+        </footer>
+    </section>
+</body>
+
+</html>
