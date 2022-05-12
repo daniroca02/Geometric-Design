@@ -1,8 +1,0 @@
-Implementation details:
-- implement the layout using the type selector
-- add hover styling on the links
-- the login link can be implemented using inline styling (until we go through the other CSS selectors, see it as a temp solution ONLY
-- you will be the one who sets the font-family and the spacing (margins, paddings, width, heights etc.)
-Colors:
-- hover orange: #ecc42a
-- login text: #330379
