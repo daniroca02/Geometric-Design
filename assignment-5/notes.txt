@@ -1,0 +1,9 @@
+- CSS triangles: https://css-tricks.com/snippets/css/css-triangle/
+- box triangle should be visible on active state only (tip: use selected/active class to manage visibility of this element)
+
+Colors:
+- blue: #1e8bc3
+- red: #be1e2d
+- yellow: #ff9f00
+- green: #35bc7a
+- grey bg: #ebeff2
