@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Berkshire Swash', cursive;
+    background: linear-gradient(#1BFFFF, #2e7692) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 4rem 0 6rem;
+    color: #3d3d3d;
+}
+
+main ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    justify-content: center;
+    gap: 20px 100px;
+}
+
+main li a {
+    text-decoration: none;
+}
+
+main li figure {
+    width: 400px;
+    height: 225px;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 2px 4px 8px #3d3d3d;
+    border-radius: 10px;
+}
+main li figure img{
+	width: 120%;
+	height: 120%;
+    object-fit: cover;
+    object-position: left;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+main li img:hover {
+	width: 100%;
+    height: 100%;
+}
+
+main li h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #3d3d3d;
+}

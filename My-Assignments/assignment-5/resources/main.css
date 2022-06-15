@@ -119,8 +119,6 @@ nav .nav-item-wrapper:last-child a {
 }
 
 section {
-    /* height: calc(100% - 135px); */
-    /* max-width: 1200px; */
     width: 100%;
     margin: auto;
 }
@@ -135,7 +133,6 @@ article {
 }
 
 article .image-wrapper {
-    /* height: 100%; */
     width: 50%;
     background-image: url("../assets/geometric-forms-bg.png");
     background-size: cover;
@@ -158,16 +155,11 @@ article .feedback-wrapper .icon-wrapper {
 }
 
 article .image-wrapper .feedback-wrapper .text-wrapper {
-    /* transform: rotate(90deg); */
-    /* rotate: 90deg; */
     height: 33%;
     width: 100%;
     background-image: url("../assets/bg-feedback.png");
     background-size: contain;
     background-repeat: no-repeat;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
 }
 
 article>div:nth-child(2) {
@@ -194,7 +186,6 @@ article>div:nth-child(2) p {
 }
 
 article>div:nth-child(2) button {
-    /* appearance: none; */
     margin-top: 40px;
     font-family: 'Mukta', sans-serif;
     font-size: 1.2rem;
@@ -214,7 +205,6 @@ article>div:nth-child(2) button:hover {
 }
 
 article>div:nth-child(2) .article-sel-wrapper {
-    /* margin: auto 0 0 auto; */
     position: absolute;
     bottom: 20px;
     right: 20px;
