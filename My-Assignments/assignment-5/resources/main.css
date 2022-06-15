@@ -241,6 +241,10 @@ main .menu-item-wrapper {
     border-radius: 10px;
 }
 
+main .menu-item-wrapper:hover {
+    filter: grayscale(0.1);
+}
+
 main .menu-item-wrapper:first-child {
     background-color: #1e8bc3;
 
@@ -377,6 +381,9 @@ footer {
         height: 6rem;
         padding: 0 15px;
         box-sizing: border-box;
+    }
+    main .menu-item-wrapper:hover {
+        filter: grayscale(0.2);
     }
 
     main .menu-item-wrapper .icon-wrapper {
