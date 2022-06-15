@@ -26,7 +26,7 @@ header {
 .logo-wrapper {
     display: flex;
     align-items: center;
-    font-size:  2.2rem;
+    font-size: 2.2rem;
 }
 
 .logo-wrapper .logo-icon-wrapper {
@@ -77,8 +77,8 @@ nav {
 
 .nav-item-wrapper.active .arrow-down {
     display: block;
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-top: 10px solid #fff;
@@ -221,7 +221,7 @@ article .article-sel-wrapper .article-sel {
     cursor: pointer;
 }
 
-article .feedback-wrapper{
+article .feedback-wrapper {
     height: 150px;
     width: 36px;
     background-image: url("../assets/bg-feedback.png");
@@ -230,6 +230,11 @@ article .feedback-wrapper{
     position: absolute;
     top: 125px;
     left: 0;
+}
+
+article .feedback-wrapper:hover {
+    filter: grayscale(0.3);
+    cursor: pointer;
 }
 
 article .feedback-wrapper .icon-wrapper {
@@ -343,7 +348,10 @@ footer {
 
 
 @media screen and (max-width: 990px) {
-    html, body, .wrapper {
+
+    html,
+    body,
+    .wrapper {
         background-color: #fff;
     }
 
@@ -399,6 +407,7 @@ footer {
         padding: 0 20px;
         box-sizing: border-box;
     }
+
     main {
         flex-direction: column;
         align-items: center;
@@ -414,6 +423,7 @@ footer {
         padding: 0 15px;
         box-sizing: border-box;
     }
+
     main .menu-item-wrapper:hover {
         filter: grayscale(0.2);
     }
@@ -439,6 +449,7 @@ footer {
         background-color: #c6d0d9;
         padding: 30px 0;
     }
+
     footer h2 {
         font-size: 1rem;
         font-weight: 500;
@@ -446,8 +457,9 @@ footer {
         color: #004a80;
         margin: 0;
         padding: 0 0.8rem;
-        border-left: solid 1px #004a80 ;
+        border-left: solid 1px #004a80;
     }
+
     footer h2:first-child {
         border: none;
     }
