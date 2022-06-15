@@ -161,10 +161,7 @@ article img {
 }
 
 article .content-wrapper {
-    position: relative;
-    width: 50%;
-    padding: 30px;
-    box-sizing: border-box;
+    padding-top: 30px;
 }
 
 article .content-wrapper h1 {
