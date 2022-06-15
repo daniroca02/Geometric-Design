@@ -60,3 +60,29 @@ main li h2 {
     font-size: 1.5rem;
     color: #3d3d3d;
 }
+
+@media screen and (max-width: 990px) {
+    header h1 {
+        font-size: 6rem;
+        margin: 4rem 0 6rem;
+    }
+
+    main ul {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 600px;
+        justify-content: center;
+        gap: 20px 100px;
+    }
+
+    main li figure {
+        width: 600px;
+        height: 337.5px;
+    }
+
+    main li h2 {
+        font-size: 3rem;
+    }
+}
