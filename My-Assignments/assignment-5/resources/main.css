@@ -63,11 +63,31 @@ nav {
     height: 110px;
     background-color: #fff;
     border-radius: 5px;
+    position: relative;
 }
 
 .nav-item-wrapper:hover {
     background-color: #d6d6d6;
     cursor: pointer;
+}
+
+.nav-item-wrapper .arrow-down {
+    display: none;
+}
+
+.nav-item-wrapper.active .arrow-down {
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    position: absolute;
+    bottom: -10px;
+}
+
+.nav-item-wrapper.active:hover .arrow-down {
+    border-top: 10px solid #d6d6d6;
 }
 
 .nav-item-wrapper a {
@@ -130,46 +150,24 @@ article {
     box-shadow: 0 20px 30px -20px #000;
     display: flex;
     margin-bottom: 50px;
-}
-
-article .image-wrapper {
-    width: 50%;
-    background-image: url("../assets/geometric-forms-bg.png");
-    background-size: cover;
-    background-position: left 0 center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
     position: relative;
-    display: flex;
 }
 
-article .feedback-wrapper .icon-wrapper {
-    height: 33%;
-    width: 100%;
-    background-image: url("../assets/icon-chat.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    left: 0;
+article img {
+    object-fit: contain;
+    object-position: left 0;
+    box-sizing: border-box;
+    padding: 30px 30px 30px 0;
 }
 
-article .image-wrapper .feedback-wrapper .text-wrapper {
-    height: 33%;
-    width: 100%;
-    background-image: url("../assets/bg-feedback.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-article>div:nth-child(2) {
+article .content-wrapper {
     position: relative;
     width: 50%;
     padding: 30px;
     box-sizing: border-box;
 }
 
-article>div:nth-child(2) h1 {
+article .content-wrapper h1 {
     font-size: 4rem;
     font-weight: 100;
     color: #1e8bc3;
@@ -177,7 +175,7 @@ article>div:nth-child(2) h1 {
     margin: 0;
 }
 
-article>div:nth-child(2) p {
+article .content-wrapper p {
     font-size: 1.2rem;
     font-weight: 100;
     line-height: 1.4rem;
@@ -185,7 +183,7 @@ article>div:nth-child(2) p {
     margin: 0;
 }
 
-article>div:nth-child(2) button {
+article .content-wrapper button {
     margin-top: 40px;
     font-family: 'Mukta', sans-serif;
     font-size: 1.2rem;
@@ -198,13 +196,13 @@ article>div:nth-child(2) button {
 
 }
 
-article>div:nth-child(2) button:hover {
+article .content-wrapper button:hover {
     color: #1e8bc3;
     background-color: #fff;
     cursor: pointer;
 }
 
-article>div:nth-child(2) .article-sel-wrapper {
+article .article-sel-wrapper {
     position: absolute;
     bottom: 20px;
     right: 20px;
@@ -212,7 +210,7 @@ article>div:nth-child(2) .article-sel-wrapper {
     flex-direction: row;
 }
 
-article>div:nth-child(2) .article-sel-wrapper .article-sel {
+article .article-sel-wrapper .article-sel {
     height: 15px;
     width: 15px;
     margin-left: 5px;
@@ -224,6 +222,39 @@ article>div:nth-child(2) .article-sel-wrapper .article-sel {
 .article-sel:hover {
     background-color: #1e8bc3;
     cursor: pointer;
+}
+
+article .feedback-wrapper{
+    height: 150px;
+    width: 36px;
+    background-image: url("../assets/bg-feedback.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 125px;
+    left: 0;
+}
+
+article .feedback-wrapper .icon-wrapper {
+    height: 20px;
+    aspect-ratio: 412/473;
+    background-image: url("../assets/icon-chat.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 20px;
+    left: 8px;
+}
+
+article .feedback-wrapper .text-wrapper {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -21px;
+    top: 48px;
 }
 
 main {
@@ -352,6 +383,10 @@ footer {
         background-color: #ebeff2;
         height: 100%;
         aspect-ratio: 1/1;
+    }
+
+    nav .nav-item-wrapper .arrow-down {
+        display: none;
     }
 
     nav .nav-item-wrapper .icon-wrapper {
