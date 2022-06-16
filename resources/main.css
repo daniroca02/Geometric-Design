@@ -7,7 +7,8 @@ body {
 
 body {
     font-family: 'Berkshire Swash', cursive;
-    background: linear-gradient(#1BFFFF, #2e7692) no-repeat center center fixed; 
+    /* background: linear-gradient(#1BFFFF, #2e7692) no-repeat center center fixed;  */
+    background: linear-gradient(#fff, #71b4b4) no-repeat center center fixed;
     background-size: cover;
 }
 
