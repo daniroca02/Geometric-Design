@@ -393,6 +393,9 @@ footer {
     nav .nav-item-wrapper .arrow-down {
         display: none;
     }
+    nav .nav-item-wrapper:hover .arrow-down {
+        display: none;
+    }
 
     nav .nav-item-wrapper .icon-wrapper {
         height: 2rem;
