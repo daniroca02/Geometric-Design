@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Front end development course">
+    <meta name="keywords" content="HTML,CSS,JS,Learning">
+    <meta name="author" content="Daniel Roca">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h2>Free shipping on orders over $250</h2>
+            <nav id="nav-bar" class="hidden">
+                <div class="logo-boundary"></div>
+                <div class="nav-items">
+                    <a class="nav-item">SHOP</a>
+                    <div class="nav-item"></div>
+                    <div class="nav-item"></div>
+                    <div class="nav-item"></div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <aside>
+                <div class="logo-wrapper"></div>
+                <a class="menu-item selected" data-content="your-orders-wrapper" data-logo="vip">Your Orders</a>
+                <a class="menu-item" data-content="reward-wrapper" data-logo="gold">Reward Status</a>
+                <a class="menu-item" data-content="account-wrapper" data-logo="elite">Account Settings</a>
+                <a class="menu-item" data-content="payment-wrapper" data-logo="member">Payment Methods</a>
+                <a class="menu-item" data-content="" data-logo="vip">Sign Out</a>
+            </aside>
+            <main>
+                <div class="content your-orders-wrapper">
+                    <h1>Your Orders</h1>
+                    <div class="order-wrapper">
+                        <div class="main-product">
+                            <img src="assets/product-1/product.png">
+                        </div>
+                        <section>
+                            <div class="order-info-wrapper">
+                                <div>
+                                    <p>April 1, 2019</p>
+                                    <a id="ordDetBtn" data-content="order-details-wrapper">Order Details</a>
+                                </div>
+                                <div>
+                                    <h2>Processing</h2>
+                                    <span><a href="">Cancel</a> / <a href="">Modify</a></span>
+                                </div>
+                                <p>Order #</p>
+                                <h2>30004</h2>
+                                <p>Order Total</p>
+                                <h2>$324.96</h2>
+                            </div>
+                            <div class="products-wrapper">
+                                <p>Also in this order</p>
+                                <div class="product-wrapper">
+                                    <img src="assets/product-1/addition-1.png">
+                                </div>
+                                <div class="product-wrapper">
+                                    <img src="assets/product-1/addition-3.png">
+                                </div>
+                                <div class="product-wrapper">
+                                    <img src="assets/product-1/addition-4.png">
+                                </div>
+                                <div class="product-wrapper">
+                                    <p>+<span>3</span> more</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="content order-details-wrapper hidden">
+                    <h1>Zanggg</h1>
+                </div>
+                <div class="content reward-wrapper hidden">
+                    <h1>Reward Status</h1>
+                </div>
+                <div class="content account-wrapper hidden">
+                    <h1>Account Settings</h1>
+                    <div>
+                        <h4>Account</h4>
+                        <form>
+                            <input required type="text" name="full_name" placeholder="Enter your Full Name">
+                            <input type="text" name="phone_number" placeholder="+1 234 567 89">
+                            <input required type="email" name="email" placeholder="Enter your email address">
+                            <input type="password" name="password" placeholder="Enter your password">
+                            <button type="submit">Save Changes</button>
+                        </form>
+                        <h4>Addresses</h4>
+                        <div class="addresses-wrapper">
+                            <div class="address-wrapper">
+                                <h4>Ben Cline</h4>
+                                <h4>1234 S. Flestwood Mac Dr</h4>
+                                <h4>Salt Lake City, UT B4109</h4>
+                                <h4>United States</h4>
+                                <h4>+1 801 641 09</h4>
+                            </div>
+                            <div class="address-wrapper">
+                                <h4>Ben Cline</h4>
+                                <h4>C/O Rally Interactive</h4>
+                                <h4>Salt Lake City, UT B4109</h4>
+                                <h4>United States</h4>
+                                <h4>+1 801 641 09</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content payment-wrapper hidden">
+                    <h1>Payment Methods</h1>
+                    <div class="cards-wrapper">
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card"></div>
+                        <div class="card add-card">
+                            <div class="plus-icon"></div>
+                            <p>Add Card</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+    <script src="resources/main.js"></script>
+</body>
+
+</html>
+
+<!-- <div class="container">
+    <nav>
+        <ul>
+            <li><a class="menu-item selected" data-content="home-container" data-bullshit="bla" data-test="test">Home</a></li>
+            <li><a class="menu-item" data-roxana="haha" data-content="about-container">About</a></li>
+            <li><a class="menu-item" data-content="contact-container">Contact</a></li>
+            <li><a class="menu-item" href="help.html">Help</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="content home-container" id="home-container">
+            <p>home text bla bla</p>
+        </div>
+        <div class="content about-container hidden">
+            <p>about aaaaaaaaaaaaa</p>
+        </div>
+        <div class="content contact-container hidden">
+            <p>contact vvdrfdrgfdrfdrrg</p>
+        </div>
+    </section>
+</div> -->

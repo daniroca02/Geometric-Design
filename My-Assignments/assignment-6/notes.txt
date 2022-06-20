@@ -1,0 +1,16 @@
+Colors:
+- #231f20 (text and top strip)
+- #f2ede8 (sidebar)
+- #f8f5f2 (content wrapper)
+- #e8e0d8 (border selected menu item)
+
+Implementation details:
+- Well-formed doc
+- Semantic tags
+- External stylesheet and script assets
+- Implement all 5 layouts provided to you as INTERNAL PAGES (z-index technique)
+- Order Details page will be navigated to from Your Orders page > Order Details link
+- JS logic for:
+     - Menu item selected state
+     - Change of page on click event
+     - Logo change according to page
