@@ -34,8 +34,8 @@ addEventListener('DOMContentLoaded', function () {
             }
 
             changeLogo(this.dataset.logo);
-
-            document.getElementsByClassName(dataContent)[0].classList.remove('hidden');
+            if(dataContent !== "")
+                document.getElementsByClassName(dataContent)[0].classList.remove('hidden');
         });
     }
 
@@ -46,6 +46,8 @@ addEventListener('DOMContentLoaded', function () {
         for (let i = 0; i < contentElements.length; ++i) {
             contentElements[i].classList.add('hidden');
         }
+
+        document.getElementById('nav-bar').classList.remove('hidden');
 
         document.getElementsByClassName(dataContent)[0].classList.remove('hidden');
     });
