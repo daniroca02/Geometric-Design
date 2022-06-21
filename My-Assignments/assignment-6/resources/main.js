@@ -1,9 +1,8 @@
 'use strict'
 
 function changeLogo(logoType) {
-    const newUrl = `assets/logo-${logoType}.png`;
     const logoWrapper = document.getElementsByClassName('logo-wrapper')[0];
-    logoWrapper.style.backgroundImage = `url(${newUrl})`;
+    logoWrapper.style.backgroundImage = `url('assets/logo-${logoType}.png')`;
 };
 
 addEventListener('DOMContentLoaded', function () {
