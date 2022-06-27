@@ -57,7 +57,51 @@ let products = {
             unit: "cm"
         }
     ],
-    lamps: [],
-    glasses: [],
-    accessories: []
+    lamps: [{
+        id: 4,
+        series: "Rayne Abstract Vase",
+        currency: "$",
+        price: 115,
+        imgUrl: "1.jpg",
+        description: "The crisp lines and sharp angles of these striking ceramic vases bring a sense of artful sophistication to a tabletop, shelf, or mantel. Display flowers or use them as a focal point in your decor, these vases are compliment worthy.",
+        designer: "Letifly",
+        sku: 222775,
+        colour: "black",
+        material: "ceramic",
+        height: 15,
+        unit: "cm"
+    }
+    ],
+    glasses: [
+        {
+            id: 4,
+            series: "Rayne Abstract Vase",
+            currency: "$",
+            price: 115,
+            imgUrl: "1.jpg",
+            description: "The crisp lines and sharp angles of these striking ceramic vases bring a sense of artful sophistication to a tabletop, shelf, or mantel. Display flowers or use them as a focal point in your decor, these vases are compliment worthy.",
+            designer: "Letifly",
+            sku: 222775,
+            colour: "black",
+            material: "ceramic",
+            height: 15,
+            unit: "cm"
+        }
+    ],
+    accessories: [
+        {
+            id: 4,
+            series: "Rayne Abstract Vase",
+            currency: "$",
+            price: 115,
+            imgUrl: "1.jpg",
+            description: "The crisp lines and sharp angles of these striking ceramic vases bring a sense of artful sophistication to a tabletop, shelf, or mantel. Display flowers or use them as a focal point in your decor, these vases are compliment worthy.",
+            designer: "Letifly",
+            sku: 222775,
+            colour: "black",
+            material: "ceramic",
+            height: 15,
+            unit: "cm"
+        }
+    ]
 }
