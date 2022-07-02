@@ -170,6 +170,10 @@ main nav .menu-item.selected {
     cursor: pointer;
 }
 
+.overlay>div>i {
+    filter: brightness(1.1);
+}
+
 .overlay-content-wrapper .image-wrapper {
     width: 50%;
     aspect-ratio: 3/4;
