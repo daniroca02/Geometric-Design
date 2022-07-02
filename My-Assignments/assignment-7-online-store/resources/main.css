@@ -105,9 +105,9 @@ main nav .menu-item.selected {
 .product-wrapper .product-image-wrapper {
     width: 300px;
     height: 400px;
-    background-image: url('../assets/vases/4.jpg');
     background-size: contain;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .series-and-price-wrapper {
@@ -129,6 +129,171 @@ main nav .menu-item.selected {
     font-size: 30px;
 }
 
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+
+.overlay>div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-content-wrapper {
+    height: 66vh;
+    aspect-ratio: 3/2;
+    display: flex;
+}
+
+.overlay>div>i {
+    height: 5vh;
+    width: 5vh;
+    background-image: url(../assets/close.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    top: 30px;
+    right: 60px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.overlay-content-wrapper .image-wrapper {
+    width: 50%;
+    aspect-ratio: 3/4;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay-content-wrapper>section {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.overlay .title-and-price-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0 50px;
+}
+
+.overlay-content-wrapper>section h1 {
+    font-size: 3.4vh;
+    font-weight: 600;
+    color: #153774;
+}
+
+.overlay-content-wrapper>section .price {
+    font-size: 3.7vh;
+    font-weight: 600;
+}
+
+.details-wrapper {
+    margin-top: auto;
+    padding: 1vh 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5vh;
+}
+
+.details-wrapper div{
+    display: flex;
+}
+
+.overlay-content-wrapper>section p {
+    font-size: 1.7vh;
+    font-weight: 400;
+    padding: 4vh 0 3vh;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay-content-wrapper>section h2 {
+    font-size: 1.6vh;
+    font-weight: 600;
+    width: 25%;
+    color: #153774;
+}
+
+.overlay-content-wrapper>section h3 {
+    font-size: 1.6vh;
+    font-weight: 400;
+    color: #153774;
+}
+
+.overlay-content-wrapper .quantity-wrapper {
+    margin-top: 1.5vh;
+    width: 100%;
+    height: 4.5vh;
+    border: 1px solid black;
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.quantity-wrapper .value {
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: #153774;
+}
+
+.quantity-wrapper>i {
+    margin: 0 20px;
+    height: 3vh;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.quantity-wrapper>i:hover {
+    cursor: pointer;
+    filter: brightness(4);
+}
+
+.quantity-wrapper .less {
+    background-image: url(../assets/minus.png);
+}
+.quantity-wrapper .more{
+    background-image: url(../assets/plus.png);
+}
+
+.overlay-content-wrapper button {
+    margin-top: 1.5vh;
+    width: 100%;
+    height: 4.5vh;
+    border: none;
+    background-color: #153774;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
+.overlay-content-wrapper button:hover {
+    background-color: #0abfdc;
+    cursor: pointer;
+}
+
 main>section {
     padding: 100px 0;
 }
@@ -143,8 +308,6 @@ main>section .categories-wrapper {
     margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: center;
-    align-items: center; */
     gap: 30px;
 }
 
@@ -161,7 +324,6 @@ main>section .categories-wrapper {
 
 .categories-wrapper .category-wrapper:hover {
     background-color: #ffe3df;
-    /* background-color: #0abfdc; */
     cursor: pointer;
 }
 

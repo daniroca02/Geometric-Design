@@ -8,12 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Home Decor</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resources/main.css">
     <script src="bundles/jquery/jquery-3.6.0.min.js"></script>
 </head>
@@ -28,28 +26,21 @@
         </header>
         <main>
             <nav>
-                <a class="menu-item selected" data-content="vases-wrapper">Vases</a>
-                <a class="menu-item" data-content="lamps-wrapper">Lamps</a>
-                <a class="menu-item" data-content="glasses-wrapper">Glasses</a>
-                <a class="menu-item" data-content="accessories-wrapper">Accessories</a>
+                <a class="menu-item" data-arrayidx="0">Vases</a>
+                <a class="menu-item" data-arrayidx="1">Lamps</a>
+                <a class="menu-item" data-arrayidx="2">Glasses</a>
+                <a class="menu-item selected" data-arrayidx="3">Accessories</a>
             </nav>
-            <div class="content vases-wrapper" data-array="vases">
-                <div class="product-wrapper" data-id="1">
-                    <div class="product-image-wrapper"></div>
-                    <div class="series-and-price-wrapper">
-                        <div class="series">Sozia Wine Bottle</div>
-                        <div class="price">$105</div>
+            <div class="content"></div>
+            <div class="overlay">
+                <div>
+                    <div class="overlay-content-wrapper">
                     </div>
+                    <i></i>
                 </div>
             </div>
-            <div class="content lamps-wrapper hidden">
-            </div>
-            <div class="content glasses-wrapper hidden">
-            </div>
-            <div class="content accessories-wrapper hidden">
-            </div>
             <section>
-            <h2>Categories</h2>
+                <h2>Categories</h2>
                 <div class="categories-wrapper">
                     <div class="category-wrapper">Zen</div>
                     <div class="category-wrapper">Shelf</div>
