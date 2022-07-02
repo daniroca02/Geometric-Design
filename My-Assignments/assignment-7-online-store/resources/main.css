@@ -169,7 +169,7 @@ main nav .menu-item.selected {
     color: #fff;
 }
 
-.overlay>div>i {
+.overlay>div>i:hover {
     filter: brightness(1.2);
     cursor: pointer;
 }
