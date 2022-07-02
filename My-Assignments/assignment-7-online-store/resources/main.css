@@ -167,11 +167,11 @@ main nav .menu-item.selected {
     top: 30px;
     right: 60px;
     color: #fff;
-    cursor: pointer;
 }
 
 .overlay>div>i {
-    filter: brightness(1.1);
+    filter: brightness(1.2);
+    cursor: pointer;
 }
 
 .overlay-content-wrapper .image-wrapper {
