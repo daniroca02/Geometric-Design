@@ -15,16 +15,17 @@ $(function () {
         return undefined;
     };
     // checked: ai mult continut static aici, il poti avea in markup, iar apoi prin selectii sa updatezi continutul dinamic stric pe elementele necesare in functie de produsul selectat de catre user
-        const replaceOverlayHTML = function (productObj) {
-            $('.overlay .title-and-price-wrapper h1, .overlay .series h3').text(productObj.series);
-            $('.overlay .title-and-price-wrapper .price').text(productObj.currency + productObj.price);
-            $('.overlay .description').text(productObj.description);
-            $('.overlay .designer h3').text(productObj.designer);
-            $('.overlay .sku h3').text(productObj.sku);
-            $('.overlay .colour h3').text(productObj.colour);
-            $('.overlay .material h3').text(productObj.material);
-            $('.overlay .height').text(productObj.height + productObj.unit);
-        };
+    const updateOverlayHTML = function (productObj) {
+        $('.overlay .title-and-price-wrapper h1, .overlay .series h3').text(productObj.series);
+        $('.overlay .title-and-price-wrapper .price').text(productObj.currency + productObj.price);
+        $('.overlay .description').text(productObj.description);
+        $('.overlay .designer h3').text(productObj.designer);
+        $('.overlay .sku h3').text(productObj.sku);
+        $('.overlay .colour h3').text(productObj.colour);
+        $('.overlay .material h3').text(productObj.material);
+        $('.overlay .height').text(productObj.height + productObj.unit);
+        $('.quantity-wrapper .value').text(1);
+    };
 
     const getProdArray = function (arrayIdx) {
         // aceasta categorie ti-o poti trimite direct printr-un data attribute din item-urile din meniul de navigare, sa nu fii nevoie sa faci manual asta, altfel cand ai 10 sau mai multe item-uri devine multa implementare manuala
@@ -76,17 +77,10 @@ $(function () {
             let productObj = productArray[id];
             let imageURL = this.style.backgroundImage;
             // add HTML overlay content
-            replaceOverlayHTML(productObj);
+            updateOverlayHTML(productObj);
 
             let imageWrapper = $('.overlay .image-wrapper');
             imageWrapper.css({ backgroundImage: imageURL });
-
-            $('.less').click(function () {
-                quantityAdd(-1);
-            });
-            $('.more').click(function () {
-                quantityAdd(1);
-            });
 
             overlay.fadeIn();
         });
@@ -101,6 +95,13 @@ $(function () {
             }
         });
     };
+    
+    $('.less').click(function () {
+        quantityAdd(-1);
+    });
+    $('.more').click(function () {
+        quantityAdd(1);
+    });
 
 
     const firstProductArrayIdx = parseInt($('.menu-item.selected').data('arrayidx'));
