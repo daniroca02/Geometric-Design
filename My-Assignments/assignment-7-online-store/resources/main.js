@@ -14,7 +14,7 @@ $(function () {
     `;
         return undefined;
     };
-    
+    // ai mult continut static aici, il poti avea in markup, iar apoi prin selectii sa updatezi continutul dinamic stric pe elementele necesare in functie de produsul selectat de catre user
         const overlayHTML = function (productObj) {
             return `<div class="overlay-content-wrapper">
                 <div class="image-wrapper"></div>
@@ -62,6 +62,7 @@ $(function () {
         };
 
     const getProdArray = function (arrayIdx) {
+        // aceasta categorie ti-o poti trimite direct printr-un data attribute din item-urile din meniul de navigare, sa nu fii nevoie sa faci manual asta, altfel cand ai 10 sau mai multe item-uri devine multa implementare manuala
         let productArray = undefined;
         switch (arrayIdx) {
             case 0:
