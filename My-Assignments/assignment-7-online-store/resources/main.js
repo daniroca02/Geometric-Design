@@ -14,55 +14,21 @@ $(function () {
     `;
         return undefined;
     };
-    // ai mult continut static aici, il poti avea in markup, iar apoi prin selectii sa updatezi continutul dinamic stric pe elementele necesare in functie de produsul selectat de catre user
-        const overlayHTML = function (productObj) {
-            return `<div class="overlay-content-wrapper">
-                <div class="image-wrapper"></div>
-                <section>
-                <div class="title-and-price-wrapper">
-                    <h1>${productObj.series}</h1>
-                    <div class="price">${productObj.currency + productObj.price}</div>
-                </div>
-                <p>${productObj.description}</p>
-                <div class="details-wrapper">
-                    <div>
-                        <h2>Series:</h2>
-                        <h3>${productObj.series}</h3>
-                    </div>
-                    <div>
-                        <h2>Designer:</h2>
-                        <h3>${productObj.designer}</h3>
-                    </div>
-                    <div>
-                        <h2>SKU:</h2>
-                        <h3>${productObj.sku}</h3>
-                    </div>
-                    <div>
-                        <h2>Colour:</h2>
-                        <h3>${productObj.colour}</h3>
-                    </div>
-                    <div>
-                        <h2>Material:</h2>
-                        <h3>${productObj.material}</h3>
-                    </div>
-                    <div>
-                        <h2>Height:</h2>
-                        <h3>${productObj.height + productObj.unit}</h3>
-                    </div>
-                </div>
-                <div class="quantity-wrapper">
-                    <i class="less"></i>
-                    <div class="value">1</div>
-                    <i class="more"></i>
-                </div>
-                <button>Add To Cart</button>
-            </section>
-        </div>
-        `
+    // checked: ai mult continut static aici, il poti avea in markup, iar apoi prin selectii sa updatezi continutul dinamic stric pe elementele necesare in functie de produsul selectat de catre user
+        const replaceOverlayHTML = function (productObj) {
+            $('.overlay .title-and-price-wrapper h1, .overlay .series h3').text(productObj.series);
+            $('.overlay .title-and-price-wrapper .price').text(productObj.currency + productObj.price);
+            $('.overlay .description').text(productObj.description);
+            $('.overlay .designer h3').text(productObj.designer);
+            $('.overlay .sku h3').text(productObj.sku);
+            $('.overlay .colour h3').text(productObj.colour);
+            $('.overlay .material h3').text(productObj.material);
+            $('.overlay .height').text(productObj.height + productObj.unit);
         };
 
     const getProdArray = function (arrayIdx) {
         // aceasta categorie ti-o poti trimite direct printr-un data attribute din item-urile din meniul de navigare, sa nu fii nevoie sa faci manual asta, altfel cand ai 10 sau mai multe item-uri devine multa implementare manuala
+        // dani: aici chiar nu imi dau seama cum sa preiau un array dintr-un data attribute
         let productArray = undefined;
         switch (arrayIdx) {
             case 0:
@@ -109,9 +75,8 @@ $(function () {
             let id = parseInt($(this).parent().data('id')) - 1;
             let productObj = productArray[id];
             let imageURL = this.style.backgroundImage;
-            let prodOverlayHTML = overlayHTML(productObj);
             // add HTML overlay content
-            $('.overlay-content-wrapper').html(prodOverlayHTML);
+            replaceOverlayHTML(productObj);
 
             let imageWrapper = $('.overlay .image-wrapper');
             imageWrapper.css({ backgroundImage: imageURL });
